@@ -267,8 +267,11 @@ padding-bottom: 70px;
   width: 900px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 600px 300px;
+  grid-template-columns: 300px 300px 300px;
   grid-template-rows: 300px 300px 300px;
+  grid-template-areas: "block1 block1 block2"
+                        "block3 block3 block4"
+                        "block5 block6 block6";
   grid-gap: 10px;
   margin-top: 80px;
   }
@@ -279,6 +282,7 @@ font-size: 14px;
   padding-left: 30px;
   padding-right: 30px;
   font-family: 'Raleway', sans-serif;
+  grid-area: block1;
    }
 .design_is_cool {
   text-transform: uppercase;
@@ -294,6 +298,7 @@ font-size: 14px;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  grid-area: block2;
 }
 .ontheblock2 {
   position: absolute;
@@ -302,7 +307,7 @@ font-size: 14px;
   height: 300px;
   background: #000;
   opacity: 0.6;
-  transform: translateX(610px);
+  transform: translateX(620px);
   font-size: 14px;
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -367,11 +372,12 @@ font-size: 14px;
   background-position: center;
   font-size: 14px;
   position: relative;
+  grid-area: block3;
   }
 .ontheblock3 {
   position: absolute;
   display: inline-block;
-  width: 600px;
+  width: 610px;
   height: 300px;
   background: #000;
   opacity: 0.6;
@@ -439,6 +445,7 @@ font-size: 14px;
   background-image: url("../img/33.png");
   background-position: center;
   position: relative;
+  grid-area: block4;
   }
   .ontheblock4 {
     position: absolute;
@@ -451,7 +458,7 @@ font-size: 14px;
     color: white;
     font-family: 'Raleway', sans-serif;
     transform: translateY(310px);
-    left: 835px;
+    left: 845px;
        } 
   .psd_to_html {
     text-transform: uppercase;
@@ -512,7 +519,7 @@ font-size: 14px;
   background-image: url("../img/44.png");
   background-position: center;
   position: relative;
-  width: 300px;
+  grid-area: block5;
   }
 .ontheblock5 {
    position: absolute;
@@ -588,13 +595,12 @@ font-size: 14px;
   background-position: center;
   background-size: cover;
   position: relative;
-  width: 600px;
-  transform:translateX(-300px);
+  grid-area: block6;
   }
   .ontheblock6 {
     position: absolute;
      display: inline-block;
-     width: 600px;
+     width: 610px;
      height: 300px;
      background: #000;
      opacity: 0.6;
@@ -602,7 +608,7 @@ font-size: 14px;
      color: white;
      font-family: 'Raleway', sans-serif;
      transform: translateY(620px);
-     right: 215px;
+     right: 205px;
      }
 .designing_is_cool_for {
   text-transform: uppercase;
